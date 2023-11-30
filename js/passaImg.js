@@ -12,7 +12,6 @@ const listaSrc = [
 imgMenor.forEach((img) => {
     img.addEventListener("click", () => {
         const idImagem = img.id;
-        console.log(idImagem);
         if (idImagem === "0") {
             imgCapa.setAttribute("src", listaSrc[0]);
         }
