@@ -1,0 +1,326 @@
+.main__conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.container__img {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 100%;
+}
+
+.img__produto {
+    width: 100%;
+    cursor: pointer;
+}
+
+.seta__esquerda {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: var(--cor-branca);
+    background-image: url("../images/icon-previous.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    margin-left: 10px;
+}
+
+.seta__direita {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: var(--cor-branca);
+    background-image: url("../images/icon-next.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    right: 0;
+    margin-right: 10px;
+}
+
+.container__textos {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.nome__empresa {
+    font-family: var(--font-textos);
+    color: var(--cor-laranja);
+    font-weight: 700;
+    font-size: 0.875rem;
+    margin-bottom: 20px;
+}
+
+.nome__tenis {
+    font-family: var(--font-textos);
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+.descricao {
+    font-family: var(--font-textos);
+    font-size: 1rem;
+    opacity: 0.8;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+}
+
+.main__precos {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-textos);
+    margin-bottom: 5px;
+}
+
+.container__preco__prcentagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.preco__desconto {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.porcentagem {
+    padding: 8px;
+    background-color: hsl(25, 100%, 94%);
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--cor-laranja);
+}
+
+.preco__real {
+    font-size: 1rem;
+    text-decoration: line-through;
+    opacity: 0.5;
+    font-weight: 400;
+}
+
+.main__btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: hsl(228, 31%, 90%);
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.btn__quantidade {
+    width: 30px;
+    height: 40px;
+    text-align: center;
+    border: none;
+    font-family: var(--font-textos);
+    font-weight: 700;
+    background-color: hsl(228, 31%, 90%);
+}
+
+.main__enviar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.adiciona__compra {
+    width: 100%;
+    color: var(--cor-branca);
+    font-weight: 700;
+    font-family: var(--font-textos);
+    font-size: 1rem;
+    background-color: var(--cor-laranja);
+    padding: 20px 0;
+    border-radius: 8px;
+    border: none;
+}
+
+.cart__add {
+    margin-right: 20px;
+}
+
+.card__carrinho {
+    display: none;
+    position: absolute;
+    width: 95%;
+    height: 80%;
+    top: 2%;
+    background-color: var(--cor-branca);
+    border-radius: 8px;
+    margin-left: 10px;
+    z-index: 999;
+}
+
+.card__titulo {
+    font-family: var(--font-textos);
+    font-weight: 700;
+    margin: 25px 0 0 25px;
+}
+hr {
+    border: 1;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.card__aviso {
+    text-align: center;
+    font-family: var(--font-textos);
+    font-weight: 500;
+    margin-top: 30%;
+}
+.container__img__menores {
+    display: none;
+}
+.preco__desk {
+    display: none;
+}
+.main__lightbox {
+    display: none;
+}
+.img_1,
+.img_2,
+.img_3 {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .main__conteudo {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        height: 100%;
+        gap: 100px;
+        z-index: 1;
+    }
+    .container__img {
+        width: 50%;
+    }
+    .img__produto {
+        border-radius: 15px;
+        width: 100%;
+    }
+    .seta__esquerda {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-color: var(--cor-laranja);
+        background-image: url("../images/icon-previous.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 50%;
+        position: absolute;
+        top: 40%;
+        left: -10%;
+        cursor: pointer;
+    }
+
+    .seta__direita {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-color: var(--cor-laranja);
+        background-image: url("../images/icon-next.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 50%;
+        position: absolute;
+        top: 40%;
+        right: -10%;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    .container__img__menores {
+        display: flex;
+        width: 100%;
+        margin-top: 20px;
+        gap: 10px;
+    }
+    .img__menores {
+        border-radius: 15px;
+        cursor: pointer;
+        width: 80px;
+    }
+    .img__menores:hover {
+        border: solid 3px var(--cor-laranja);
+        box-sizing: border-box;
+        opacity: 0.5;
+    }
+    .container__textos {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .nome__empresa {
+        margin-top: 30px;
+    }
+    .nome__tenis {
+        font-family: var(--font-textos);
+        font-weight: 700;
+        font-size: 2.2rem;
+        margin-bottom: 30px;
+    }
+    .descricao {
+        font-family: var(--font-textos);
+        font-size: 1rem;
+        opacity: 0.8;
+        line-height: 1.5em;
+        margin-bottom: 30px;
+    }
+    .main__enviar {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .btn__menos {
+        cursor: pointer;
+    }
+    .btn__mais {
+        cursor: pointer;
+    }
+
+    .adiciona__compra {
+        padding: 10px;
+        cursor: pointer;
+    }
+    .preco__desk {
+        font-size: 1rem;
+        text-decoration: line-through;
+        opacity: 0.5;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+
+    .img_1,
+    .img_2,
+    .img_3 {
+        display: none;
+    }
+    .card__carrinho {
+        display: none;
+    }
+}
