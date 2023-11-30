@@ -1,0 +1,16 @@
+@import url("./styles/header.css");
+@import url("./styles/body.css");
+
+:root {
+    --cor-laranja: hsl(26, 100%, 55%);
+    --cor-branca: rgb(255, 255, 255);
+    --cor-preta: rgb(0, 0, 0);
+    --font-textos: "Kumbh Sans", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
